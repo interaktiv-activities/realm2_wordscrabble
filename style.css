@@ -60,6 +60,13 @@ body{
 }
 
 
+.timer{
+	font-family:"LuloCleanW01-OneBold";
+	font-size:20px;
+	font-weight: 900;
+	margin-bottom: 10px
+}
+
 .score{
 	font-family:"LuloCleanW01-OneBold";
 	font-size:20px;
@@ -89,6 +96,7 @@ body{
 .letters-img{
     height: 70px;
     margin-bottom: 20px;
+	margin top:40px;
 }
 
 .btn{
@@ -120,13 +128,15 @@ body{
 .question-text{
     font-family: Majorant;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 500;
     letter-spacing: 1px;
     width: 741px;
     height: 125px;
     justify-content: center;
     align-items: center;
     text-align: center;
+	margin:auto;
+	margin-top:20px;
 }
 
 .answer-box{
@@ -146,3 +156,4 @@ body{
 	margin-left:5px;
 	text-align:center;
 }
+
