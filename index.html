@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REALM 2 - Word Scrabble</title>
+<link href="style.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="favicon.PNG">
+<script defer src="script.js"></script>
+</head>
+
+<body>
+	<div cless="container" id="container">
+    	
+  		<img id="opening-counter" id="countdown" class="msg" src="ASSETS/counter.png" height="840" alt=""/>
+		<div class="countdown-text" id="countdown-text">5</div>
+		
+		<img src="ASSETS/REALM 2 PASS-MSG.png" height="491" alt="" id="pass-msg" class="msg hide"/> 
+		<img src="ASSETS/fail-msg1.png" height="840" alt="" id="fail-msg" class="msg hide"/>
+		
+		<button class="menu-btn btn hide" id="menu-btn" onClick="window.location.href='https://interaktiv.benilde.edu.ph/?page_id=7881';">BACK TO MENU</button>
+		
+  		<div class="header">
+			<img id="title-img" class="title-img hide" src="ASSETS/realm 2 title-sign.png" height="69" alt=""/>
+			<div id="level-text" class="level-text hide"> LEVEL 1 </div>
+			<div id="timer" class="timer hide"> TIMER: <span id="time-remaining">60</span></div>
+		</div>
+		
+  		<img src="ASSETS/larcy.png" height="196" alt="" id="letters-img1" class="letters-img hide"/>
+		<img src="ASSETS/CHMS.png" height="196" alt="" id="letters-img2" class="letters-img hide"/>
+		<img src="ASSETS/FINANCE.png" height="196" alt="" id="letters-img3" class="letters-img hide"/>
+		<img src="ASSETS/MINISTRY.png" height="196" alt="" id="letters-img4" class="letters-img hide"/>
+		<img src="ASSETS/CAREER.png" height="196" alt="" id="letters-img5" class="letters-img hide"/>
+		<img src="ASSETS/SCHOLARSHIP.png" height="196" alt="" id="letters-img6" class="letters-img hide"/>
+		<img src="ASSETS/BENIRE.png" height="196" alt="" id="letters-img7" class="letters-img hide"/>
+		<img src="ASSETS/BENILDE MAIL.png" height="196" alt="" id="letters-img8" class="letters-img hide"/>
+		<img src="ASSETS/AKIC.png" height="196" alt="" id="letters-img9" class="letters-img hide"/>
+		<img src="ASSETS/SERVICES.png" height="196" alt="" id="letters-img10" class="letters-img hide"/>
+		
+		<div class="footer">
+        	<div id="question-text" class="question-text  hide"> Question </div>
+            <input type="text" class="answer-box hide" id="answer-box" placeholder="ENTER YOUR ANSWER HERE" onkeyup="this.value = this.value.toUpperCase()" onfocus="this.value=''"> <br>
+            <button class="submit-btn btn hide" id="submit-btn" onclick="submitAnswer()">SUBMIT</button>
+        </div>
+		
+	</div>
+</body>
+</html>
