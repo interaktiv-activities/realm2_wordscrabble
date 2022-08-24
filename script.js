@@ -26,6 +26,8 @@ window.addEventListener("click", () => {
 //START MESSAGE ELEMENT
 const countdown = document.getElementById("countdown")
 const countdownText = document.getElementById("countdown-text")
+const countdownContainer=document.getElementById("countdown-container")
+
 
 //QUIZ ELEMENTS
 const titleImage = document.getElementById("title-img")
@@ -109,8 +111,9 @@ addEventListener('keypress', function (e){
 })
 
 function startGame(){
-    countdown.classList.add("hide")
-    countdownText.classList.add("hide")
+	countdownContainer.classList.add("hide")
+    //countdown.classList.add("hide")
+    //countdownText.classList.add("hide")
     titleImage.classList.remove('hide')
     levelText.classList.remove('hide')
     timerText.classList.remove('hide')
@@ -279,14 +282,14 @@ function submitAnswer(){
 }
 
 var questionBank = [
-    "The ______________ acts as a home-based extension of the Center for Learning Resources (LRC).",
-    "The _______ is there to help you with your medical and dental concerns. They aim to provide healthcare services to better the physical health and well-being of the Benildean community",
-    "The ____________ Department is committed to safeguarding and managing the institution’s resources, accounting, and financial affairs.",
-    "Office for Student Accompaniment of the Center of Lasallian ___________ provides all retreats and recollections for the students of the College.",
-    "___________ Information Services are services intended to help students broaden their awareness on options for employment and available educational choices through the mediums of the career portal and bulletin board.",
-    "_________ is a grant or a form of support for a student's education. It can be Academic, Financial Grants, or Government-Mandated Grants.",
+    "The _____ acts as a home-based extension of the Center for Learning Resources (LRC).",
+    "The ____ is there to help you with your medical and dental concerns. They aim to provide healthcare services to better the physical health and well-being of the Benildean community",
+    "The _______ Department is committed to safeguarding and managing the institution’s resources, accounting, and financial affairs.",
+    "Office for Student Accompaniment of the Center of Lasallian ________ provides all retreats and recollections for the students of the College.",
+    "______ Information Services are services intended to help students broaden their awareness on options for employment and available educational choices through the mediums of the career portal and bulletin board.",
+    "___________ is a grant or a form of support for a student's education. It can be Academic, Financial Grants, or Government-Mandated Grants.",
     "Stands for Benildean Reflection Encounter as the recollection and retreat code.",
-    "All official communications for students are sent via  _________. It is the responsibility of the students to regularly check these communications.",
+    "All official communications for students are sent via  ______. It is the responsibility of the students to regularly check these communications.",
     "It is a campus in DLS-CSB for the International Hospitality Management or IHM and the School of Hotel, Restaurant, and Institution Management or SHRIM students.",
-    "The Benilde Well-being Center (BWC) provides _________ to the Benildean community such as counseling for those who experience personal issues, career concerns, or psychological problems, and help Benildeans in their educational objectives and goals."
+    "The Benilde Well-being Center (BWC) provides ______ to the Benildean community such as counseling for those who experience personal issues, career concerns, or psychological problems, and help Benildeans in their educational objectives and goals."
 ];
